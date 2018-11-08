@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/NotchLayoutGuide.svg?style=flat)](https://cocoapods.org/pods/NotchLayoutGuide)
 [![Platform](https://img.shields.io/cocoapods/p/NotchLayoutGuide.svg?style=flat)](https://cocoapods.org/pods/NotchLayoutGuide)
 
+![](https://github.com/noppefoxwolf/NotchLayoutGuide/blob/master/Meta/demo.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
