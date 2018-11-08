@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NotchLayoutGuide_Example' do
+  pod 'NotchLayoutGuide', :path => '../'
+
+  target 'NotchLayoutGuide_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
