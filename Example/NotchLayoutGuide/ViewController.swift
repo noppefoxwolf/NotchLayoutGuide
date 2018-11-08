@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import NotchLayoutGuide
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  private let button = UIButton(frame: .zero)
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    button.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+    button.setTitle("Notch!!", for: .normal)
+    
+    guard let window = UIApplication.shared.keyWindow else { return }
+    
+    button.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(button)
+    NSLayoutConstraint.activate([
+      button.topAnchor.constraint(equalTo: window.notchLayoutGuide.bottomAnchor),
+      button.centerXAnchor.constraint(equalTo: window.notchLayoutGuide.centerXAnchor),
+      button.widthAnchor.constraint(equalToConstant: 100),
+      button.heightAnchor.constraint(equalToConstant: 44),
+    ])
+  }
 }
 

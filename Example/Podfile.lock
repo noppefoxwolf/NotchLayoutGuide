@@ -1,0 +1,16 @@
+PODS:
+  - NotchLayoutGuide (0.1.0)
+
+DEPENDENCIES:
+  - NotchLayoutGuide (from `../`)
+
+EXTERNAL SOURCES:
+  NotchLayoutGuide:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NotchLayoutGuide: c7a4930477446ba9a4babba4c3b50bd62da019ad
+
+PODFILE CHECKSUM: 0dcf3204025e81492480f6dc8225b3f62b6ad4c4
+
+COCOAPODS: 1.6.0.beta.2
